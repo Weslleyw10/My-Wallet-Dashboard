@@ -49,7 +49,30 @@ export const MenuItem = styled.a`
     margin: 7px 0;     
 
     &:hover {
-        opacity: .7s;
+        opacity: .7;
+    }
+
+    > svg {
+        margin-right: 5px;
+    }
+
+`;
+
+export const MenuItemButton = styled.button`
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+
+    color: ${props => props.theme.colors.info};
+    background: transparent;
+    border: none;
+
+    transition: opacity .3s; 
+
+    margin: 7px 0;     
+
+    &:hover {
+        opacity: .7;
     }
 
     > svg {
