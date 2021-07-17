@@ -44,6 +44,12 @@ const SignIn: React.FC = () => {
                 </Button>
             </Form>
 
+            <div>
+                <h3>Informações de login:</h3>
+                <p>Email: email@email.com</p>
+                <p>Senha: 123</p>
+            </div>
+
 
         </Container>
     )

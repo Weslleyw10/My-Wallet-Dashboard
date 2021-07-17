@@ -16,10 +16,7 @@ export const Container = styled.div`
 
 `;
 
-export const Profile = styled.div`
-
-
-`;
+export const Profile = styled.div``;
 
 export const Welcome = styled.div``;
 

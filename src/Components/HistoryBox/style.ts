@@ -6,7 +6,7 @@ interface ILegendProps {
 
 export const Container = styled.div`
     width: 100%;
-    height: 300px;
+    min-height: 300px;
     display: flex;
     flex-direction: column;
     
@@ -15,9 +15,6 @@ export const Container = styled.div`
 
     background: ${props => props.theme.colors.tertiary};    
     border-radius: 7px;
-
-
-
     
 `;
 
@@ -36,6 +33,12 @@ export const Header = styled.div`
 
     > h2 {
         padding-left: 16px;
+        font-size: 20px;
+    }
+
+    @media(max-width: 1280px) {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
 `;
@@ -43,22 +46,23 @@ export const Header = styled.div`
 export const LegendContainer = styled.div`
     display: flex;
     padding-right: 16px;
+
+    @media(max-width: 1280px) {
+        margin-left: 16px;
+        margin-top: 10px;
+    }
 `;
 
 export const Legend = styled.ul`
     display: flex;
     align-items: center;
     margin-bottom: 7px;
-    
     font-size: 14px;    
     list-style: none;
-    
-`
+`;
 
 export const LegendItem = styled.li<ILegendProps>`    
-    
     background: ${props => props.color};
-    
     margin-right: 7px;
 
     &:first-child {

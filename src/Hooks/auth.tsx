@@ -15,7 +15,7 @@ const AuthProvider: React.FC = ({ children }) => {
     })
 
     const signIn = (email:string, password:string) => {
-        if(email === 'weslley.silva@email.com' && password === '123') {
+        if(email === 'email@email.com' && password === '123') {
             localStorage.setItem('@my-wallet:logged', 'true')
             setLogged(true)
         } else {

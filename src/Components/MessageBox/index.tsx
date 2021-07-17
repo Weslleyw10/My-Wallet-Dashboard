@@ -30,8 +30,6 @@ const MessageBox:React.FC<IMessageBoxProps> = ({
             <footer>
                 <span>{footerText}</span>
             </footer>
-
-            
         </Container>
     )
 }
