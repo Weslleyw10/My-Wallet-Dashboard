@@ -1,4 +1,4 @@
-export default [
+const expenses = [
   {"description":"Energia elétrica",      "amount":"150.55","type":"saída","frequency":"recorrente","date":"2020-01-10"},
   {"description":"Energia elétrica",      "amount":"150.55","type":"saída","frequency":"recorrente","date":"2021-05-10"},
   {"description":"Água",                  "amount":"75.55", "type":"saída","frequency":"recorrente","date":"2020-01-15"},
@@ -51,3 +51,6 @@ export default [
   {"description":"Pizza",                 "amount":"60.00", "type":"saída","frequency":"eventual",  "date":"2020-07-19"},
   {"description":"Lazer",                 "amount":"1600.00", "type":"saída","frequency":"eventual",  "date":"2020-07-28"},
 ]
+
+
+export default expenses

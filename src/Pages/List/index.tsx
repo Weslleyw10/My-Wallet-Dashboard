@@ -69,15 +69,13 @@ const List: React.FC <IRouteParams> = ({ match }) => {
             }
         })
 
-        // console.log(uniqueMonths.sort())
-
         return uniqueMonths.map(month => {
             return {
                 "value": month+1,
                 "label": monthsExtense[month],
             }
         }).sort()
-    }, [])
+    }, [listData])
 
     const years = useMemo(() => {
         let uniqueYears: number[] = [];
@@ -98,28 +96,19 @@ const List: React.FC <IRouteParams> = ({ match }) => {
             }
         }).sort()
 
-    }, []);
+    }, [listData]);
 
     const handleFrequency = (frequency: string) => {
         const alreadySelected = selectedFrequency.findIndex(item => item === frequency)
-
-        console.log(selectedFrequency)
 
         if (alreadySelected >= 0) {
             const filtered = selectedFrequency.filter(item => item !== frequency)
             setSelectedFrequency(filtered)
 
-            console.log(filtered)
-
         } else {
             setSelectedFrequency((prev) => [...prev, frequency])
         }
-
-        console.log(selectedFrequency)
-
-
     }
-
 
     useEffect(() => {
         const filteredDate = listData.filter(item => {

@@ -297,8 +297,6 @@ const Dashboard: React.FC = () => {
             return month === monthSelected && year === yearSelected
 
         }).forEach(gain => {
-            console.log(gain)
-
             if(gain.frequency === "recorrente") {
                 return gainRecurrent += Number(gain.amount)
             }
